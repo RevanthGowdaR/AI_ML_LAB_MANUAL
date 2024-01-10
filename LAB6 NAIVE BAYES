@@ -83,7 +83,7 @@ def getAccuracy(testSet, predictions):
     accuracy = safe_div(correct,float(len(testSet))) * 100.0
     return accuracy
 def main():
-    filename = '5-dataset.csv'
+    filename = 'naive.csv'
     splitRatio = 0.9
     dataset = loadCsv(filename)
     trainingSet, testSet = splitDataset(dataset, splitRatio)
@@ -91,7 +91,7 @@ def main():
     print('Number of Training data: ' + (repr(len(trainingSet))))
     print('Number of Test Data: ' + (repr(len(testSet))))
     print("\nThe values assumed for the concept learning attributes are\n")
-print("OUTLOOK=> Sunny=1 Overcast=2 Rain=3\nTEMPERATURE=> Hot=1 Mild=2 Cool=3\nHUMIDITY=> High=1 Normal=2\nWIND=> Weak=1 Strong=2")
+    print("OUTLOOK=> Sunny=1 Overcast=2 Rain=3\nTEMPERATURE=> Hot=1 Mild=2 Cool=3\nHUMIDITY=> High=1 Normal=2\nWIND=> Weak=1 Strong=2")
     print("TARGET CONCEPT:PLAY TENNIS=> Yes=10 No=5")
     print("\nThe Training set are:")
     for x in trainingSet:
