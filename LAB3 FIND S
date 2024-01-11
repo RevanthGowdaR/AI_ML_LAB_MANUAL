@@ -1,7 +1,7 @@
 import csv
 import pprint
 from math import *
-lines=list(csv.reader(open('id3.csv','r')))
+lines=list(csv.reader(open('finds.csv','r')))
 data=lines.pop(0)
 print(data)
 print()
